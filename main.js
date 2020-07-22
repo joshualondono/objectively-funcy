@@ -14,12 +14,12 @@ const getFullName = function(obj){
 
 const setFirstName = function(obj, str){
   obj.firstName = str
-  return obj
+  return
 }
 
 const setAge = function(obj, num){
   obj.age = num
-  return obj
+  return
 }
 
 const giveBirthday = function(obj){
@@ -28,7 +28,7 @@ const giveBirthday = function(obj){
 
   } else
   obj.age = obj.age + 1
-  return obj
+  return
 }
 
 const marry = function(obj1, obj2){
@@ -40,6 +40,16 @@ const marry = function(obj1, obj2){
 
   return
 }
+
+const divorce = function(obj1, obj2){
+  obj1.married = false
+  obj2.married = false
+
+  delete obj1.spouseName
+  delete obj2.spouseName
+  return
+}
+
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
