@@ -23,6 +23,10 @@ const setAge = function(obj, num){
 }
 
 const giveBirthday = function(obj){
+  if (obj.age === undefined){
+      obj.age = 1
+
+  } else
   obj.age = obj.age + 1
   return obj
 }
