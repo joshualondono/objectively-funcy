@@ -17,6 +17,16 @@ const setFirstName = function(obj, str){
   return obj
 }
 
+const setAge = function(obj, num){
+  obj.age = num
+  return obj
+}
+
+const giveBirthday = function(obj){
+  obj.age = obj.age + 1
+  return obj
+}
+
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
   getFirstName = undefined
