@@ -1,8 +1,21 @@
 // Your code here.
+const getFirstName = function(obj){
+  return obj.firstName
+}
 
+const getLastName = function(obj){
+  return obj.lastName
+}
 
+const getFullName = function(obj){
 
+  return obj.firstName + ' ' + obj.lastName
+}
 
+const setFirstName = function(obj, str){
+  obj.firstName = str
+  return obj
+}
 
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
