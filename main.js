@@ -27,6 +27,23 @@ const giveBirthday = function(obj){
   return obj
 }
 
+const marry = function(obj1, obj2){
+  obj1.married = true
+  obj2.married = true
+
+  obj1last = obj1.lastName
+  obj2last = obj2.lastname
+  obj1first = obj1.firstName
+  obj2first = obj2.firstName
+
+  obj1.firstName = obj2first
+  obj1.lastName = obj2last
+  obj2.firstName = obj1first
+  obj2.lastName = obj1last
+
+  return obj1 + obj2
+}
+
 // Our code here. Don't touch!
 if (typeof getFirstName === 'undefined') {
   getFirstName = undefined
